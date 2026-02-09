@@ -22,8 +22,6 @@ async goto() {
 
 
   async login(username: string, password: string) {
-    console.log('USERNAME:', process.env.USERNAME);
-
     await this.usernameField.fill(username);
     await this.passwordField.fill(password);
     await this.submitButton.click();
